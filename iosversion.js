@@ -20,3 +20,14 @@ function detectIOSVersion() {
 }
 
 window.onload = detectIOSVersion;
+
+@param {number} version - The visitor's iOS version.
+ * @returns {string} Message indicating if the version is jailbreakable or not.
+ */
+function checkJailbreakable(version) {
+    if (version >= 1 && version <= 16.5) {
+        return "Your version is jailbreakable";
+    } else {
+        return "Your version is not jailbreakable";
+    }
+}
