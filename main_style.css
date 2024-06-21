@@ -6,24 +6,30 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     background: #010101;
     overscroll-behavior: none;
     font-family: "Inter";
 }
 
+.header {
+    padding: 4em;
+    opacity: 0.75;
+}
+
 .header h1 {
-    text-align: right;
-    width: 50%;
+    width: 60%;
     background: linear-gradient(to top, #cecece 0%, #FEFEFE);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
-    font-size: 70px;
+    font-size: 80px;
     letter-spacing: -0.05em;
     line-height: 1;
 }
+
 h1 {
     font-size: 25vw;
 }
