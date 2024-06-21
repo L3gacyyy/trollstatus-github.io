@@ -5,7 +5,7 @@ function detectIOSVersion() {
     );
 
     	
-    };
+    }
 
 function displayJpgPicture(userAgent) {
     // Check if the user agent indicates iOS and the version is between 1 and 16.5.1
