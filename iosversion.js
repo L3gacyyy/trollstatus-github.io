@@ -8,10 +8,10 @@ function detectIOSVersion() {
     
     const messageElement = document.createElement('div');
     messageElement.textContent = message;
-    messageElement.style.backgroundColor = '#f0f0f0';
+    messageElement.style.backgroundColor = transparent;
     messageElement.style.color = '#333';
     messageElement.style.padding = '10px';
-    messageElement.style.position = 'fixed';
+    messageElement.style.position = 'center';
     messageElement.style.bottom = '10px';
     messageElement.style.left = '10px';
     messageElement.style.border = '1px solid #ccc';
