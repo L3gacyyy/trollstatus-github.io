@@ -20,3 +20,25 @@ function detectIOSVersion() {
 }
 
 window.onload = detectIOSVersion;
+
+/**
+ * Function to display a jpg picture if the visitor is using iOS version 1 to 16.5.1.
+ *
+ * @param {string} userAgent - The user agent string containing information about the visitor's browser and device.
+ */
+function displayJpgPicture(userAgent) {
+    // Check if the user agent indicates iOS and the version is between 1 and 16.5.1
+    if (/iP(hone|od|ad)/.test(userAgent) && /OS\s([\_0-9]+)/.test(userAgent)) {
+        let version = userAgent.match(/OS\s([\_0-9]+)/)[1].replace(/_/g, '.');
+        let versionNumber = parseFloat(version);
+
+        if (versionNumber >= 1 && versionNumber <= 16.5) {
+            // Display the jpg picture
+            console.log("Displaying jpg picture for iOS version 1 to 16.5.1");
+        } else {
+            console.log("iOS version is not within the specified range.");
+        }
+    } else {
+        console.log("Visitor is not using an iOS device.");
+    }
+}
