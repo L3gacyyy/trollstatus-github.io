@@ -4,9 +4,6 @@ function detectIOSVersion() {
             .replace('undefined', '3_2').replace('_', '.').replace('_', '')
     );
 
-    	
-    }
-
     let message = "You are using iOS version " + iOSVersion;
     
     const messageElement = document.createElement('div');
@@ -18,7 +15,7 @@ function detectIOSVersion() {
     messageElement.style.bottom = '10px';
     messageElement.style.left = '10px';
     messageElement.style.border = '1px solid #ccc';
-  
+    
     document.body.appendChild(messageElement);
 }
 
