@@ -22,19 +22,15 @@
 <canvas></canvas>
 
 <script>
-    
-  function deviceAPIcallback(result){
-          if(result.osName == "iOS 16.5"){
-            window.location.href = "dopamine.html";
-          };
-            if(result.osName == "iOS 16.6"){
-            window.location.href = "serotonin.html";
-          };
-              
-          else{
-            window.location.href = "no jailbreak.html";
-          }
-      }
+
+checkVersion = function () {
+    var agent = window.navigator.userAgent,
+    start = agent.indexOf("OS");
+    if( ( agent.indexOf( "iPhone") > -1 || agent.indexOf( "iPad" ) > -1 ) && start > -1 ){
+        return window.Number( agent.substr( start + 3, 3 ).replace("_", ".") );
+    }
+    return 0;
+}
     
 </script>
 <script></script>
