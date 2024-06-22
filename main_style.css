@@ -8,6 +8,42 @@
 
 html,
 body {
+            display: grid;
+            place-items: center;
+            color: yellow;
+        }
+         
+        .main__bg {
+        background-image: linear-gradient(-60deg, #404258 50%, #6B728E 50%);
+        animation: slide 3s ease-in-out infinite alternate;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -50%;
+        right: -50%;
+        opacity: 0.5;
+        z-index: -1;
+        }
+         
+        .layer1 {
+        animation-direction: alternate-reverse;
+        animation-duration: 4s;
+        }
+         
+        .layer2 {
+        animation-duration: 5s;
+        }
+         
+        @keyframes slide {
+        0% {
+            transform: translateX(-25%);
+        }
+        100% {
+            transform: translateX(25%);
+        }
+        }
+
+{
     background: #010101;
     overscroll-behavior: none;
     font-family: "Inter";
