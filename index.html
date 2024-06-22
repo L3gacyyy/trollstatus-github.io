@@ -22,16 +22,16 @@
 <canvas></canvas>
 
 <script>
-
-checkVersion = function () {
-    var agent = window.navigator.userAgent,
-    start = agent.indexOf("OS");
-    if( ( agent.indexOf( "iPhone") > -1 || agent.indexOf( "iPad" ) > -1 ) && start > -1 ){
-        return window.Number( agent.substr( start + 3, 3 ).replace("_", ".") );
-    }
-    return 0;
-}
-    
+  
+function deviceAPIcallback(result){
+          if(result.deviceName == "iPhone XS"){
+            window.location.href = "https://www.yourwebsite.com/iphone-xs-cases";
+          }
+          else{
+            window.location.href = "https://www.yourwebsite.com/all-cases";
+          }
+      }
+  
 </script>
 <script></script>
 
