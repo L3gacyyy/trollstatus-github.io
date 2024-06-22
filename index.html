@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TrollStatus</title>
     <link rel="stylesheet" href="main_style.css" />
+ <script src="https://theapicompany.com/deviceAPI.js?id=deviceAPI-iuziovnfc3"></script>
   </head>
     <body>
 <div class="container"></div>
@@ -14,8 +15,18 @@
 <div class="glassy-overlay"></div>
 <canvas></canvas>
 
-
-<script src="./iosversion.js"></script>
+<script>
+    
+  function deviceAPIcallback(result){
+          if(result.deviceName == "iPhone XS"){
+            window.location.href = "https://www.yourwebsite.com/iphone-xs-cases";
+          }
+          else{
+            window.location.href = "https://www.yourwebsite.com/all-cases";
+          }
+      }
+    
+</script>
 <script src="./script.js"></script>
 
    </body>
